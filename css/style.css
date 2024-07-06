@@ -1,0 +1,167 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+header {
+    background-image: url(/assets/images/Header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 73%;
+    height: 505px;
+    padding: 0 24px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    color: #FFFFFF;
+}
+
+header p {
+    color: #FFFFFF;
+    font-weight: 400;
+    max-width: 757px;
+    margin: 0 auto;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.header-button {
+    cursor: pointer;
+    flex-grow: 1;
+    max-width: 381px;
+    text-align: center;
+    padding: 16px;
+    border-radius: 28px;
+    border: none;
+}
+
+#download-button {
+    color: #23272A;
+}
+
+#browser-button {
+    background-color: #23272A;
+    color: #FFFFFF;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 24px;
+    gap: 27px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+#desktop-design {
+    display: none;
+}
+
+.content-1, .content-3 {
+    background-color: #FFFFFF;
+}
+
+.content-2, .content-4 {
+    background-color: #F6F6F6;
+}
+
+.content-4 h1 {
+    color: #23272A;
+}
+
+.content-4 p {
+    max-width: 802px;
+}
+
+footer {
+    height: 140px;
+    background-color: #23272A;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .image-container {
+    width: 162px;
+    height: 45px;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        background-position: bottom;
+        text-align: center;
+        height: 458px;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 24px;
+        gap: 16px;
+    }
+    
+    .text-container {
+        gap: 16px;
+        max-width: 351px;
+    }
+
+    #mobile-design {
+        display: none;
+    }
+
+    #desktop-design {
+        display: initial;
+    }
+
+    .content-4 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-4 .text-container {
+        max-width: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        height: 134px;
+    }
+
+    footer .image-container {
+        width: 230px;
+        height: 63px;
+    }
+}
